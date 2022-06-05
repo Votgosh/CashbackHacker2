@@ -37,4 +37,15 @@ public class CashbackHackServiceTest {
 
         assertEquals(expected,actual);
     }
+
+    @Test
+    public void buyMaxBuy() {
+        int amount = 1000;
+        int expected = 0;
+
+        CashbackHackService service = new CashbackHackService();
+        int actual = service.remain(amount);
+
+        assertEquals(expected,actual);
+    }
 }
